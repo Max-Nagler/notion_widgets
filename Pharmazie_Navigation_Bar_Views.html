@@ -24,8 +24,8 @@
 
 
 		.navMenu {
-			font-family: 'Advent Pro', sans-serif;
-			padding: 8px;
+			font-family: 'PT-Serif', Regular 400;
+			padding: 4px;
 			text-align: center;
 			margin: 7px auto;
 			width: fit-content;
@@ -34,13 +34,13 @@
 		.navMenu a {
 			color: #272727;
 			text-decoration: none;
-			text-transform: uppercase;
+			text-transform: none;
 			display: inline-block;
-			padding: 6px;
+			padding: 4px;
 		}
 
 		.background {
-			background-color: #ece5f0;
+			background-color: #cccccc;
 		}
 
 		.border {
@@ -50,7 +50,7 @@
 
 		.navMenu a:hover {
 
-			color: #d09c0b;
+			color: #567675;
 		}
 	</style>
 </head>
@@ -58,9 +58,9 @@
 <body>
 
 	<nav class="navMenu  border">
-		<a id="University-Mobile" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="Pharmazie-Mobile" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-mobile-screen"></i> Pharmazie-Mobile</a>
+		<a id="Pharmazie-Work" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-laptop-file"></i> Pharmazie-Work</a>
 		
-
 
 
 	</nav>
@@ -76,8 +76,10 @@
 
 		function navigate(id) {
 
-			if (id == 'University - Mobile')
+			if (id == "Pharmazie-Mobile")
 				window.open("https://www.notion.so/max-nagler/University-Mobile-b77d3ca808db4ba6948554a217d38ab1?pvs=4", '_blank').focus();
+			else if (id == "Pharmazie-Work")
+				window.open("https://www.notion.so/max-nagler/University-Work-f1ff6aadfd9d4a6db83001641278c089?pvs=4", '_blank').focus();
 			
 
 		}
